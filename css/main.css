@@ -1,0 +1,95 @@
+body {
+    width: 1000px;
+    margin: 0 auto 0;
+}
+
+/* 헤더 영역 menu top */
+header {
+    /* widht : 200px */
+    width: 20%;
+    height: 700px;
+    background: #ddd;
+    float: left;
+    padding: 1.1%;
+    box-sizing: border-box;
+}
+header div.logo{
+    margin: 15% 0;
+}
+header nav.menu{
+    background: #111;
+    text-align: center;
+}
+header nav.menu li {
+    padding: 13px 0;
+}
+header nav.menu li a{
+    color: #fff;
+    text-decoration: none;
+}
+/* 와이어 프레임 오른쪽 시작 */
+.bodywrap {
+    width: 80%;
+    float: left;
+}
+.bodywrap .imgslide {
+    height: 350px;
+    background: skyblue;
+    position: relative;
+}
+.bodywrap .imgslide span.imgtext{
+    color: #fff;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.562);
+    padding: 10px 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bodywrap .imgslide .img {
+}
+/* 컨텐츠 시작 */
+.bodywrap .contents {
+    background: orange;
+    margin: 10px;
+}
+.bodywrap .contents .tabmenu {
+    background: skyblue;
+    width: 40%;
+}
+.bodywrap .contents .tabmenu>li{
+
+}
+.bodywrap .contents .tabmenu>li>a{
+    display: block;
+    float: left;
+    background: #fff;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+.bodywrap .contents .tabmenu li .notice ul {
+    height: 200px;
+}
+.bodywrap .contents .tabmenu li .notice ul li {
+    display: block;
+    width: 100%;
+}
+.bodywrap .contents .tabmenu li .notice ul li a {
+}
+.bodywrap .contents .tabmenu li .notice ul li:nth-child(2n){
+    background: #ddd;
+}
+.bodywrap .contents .tabmenu .active2{
+    position: relative;
+    top:-200px;
+    left: 84px;
+    background: #ddd;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
