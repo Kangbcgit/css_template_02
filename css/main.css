@@ -1,95 +1,67 @@
+/* common */
+/* common 에서 느낀점 
+= > 작업 전에큰 틀의 공통적인 사항을 먼저 생각해보자 */
+/* 문서를 변경할때 내용만 바꾸면 나머지 css 스타일을 안바꿔도
+되게 코딩해보자 */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕", sans-serif;
+    color: #222328;
+}
+
 body {
     width: 1000px;
-    margin: 0 auto 0;
+    font-style: 20px;
 }
-
-/* 헤더 영역 menu top */
-header {
-    /* widht : 200px */
-    width: 20%;
-    height: 700px;
-    background: #ddd;
-    float: left;
-    padding: 1.1%;
-    box-sizing: border-box;
-}
-header div.logo{
-    margin: 15% 0;
-}
-header nav.menu{
-    background: #111;
-    text-align: center;
-}
-header nav.menu li {
-    padding: 13px 0;
-}
-header nav.menu li a{
-    color: #fff;
+a {
     text-decoration: none;
-}
-/* 와이어 프레임 오른쪽 시작 */
-.bodywrap {
-    width: 80%;
-    float: left;
-}
-.bodywrap .imgslide {
-    height: 350px;
-    background: skyblue;
-    position: relative;
-}
-.bodywrap .imgslide span.imgtext{
-    color: #fff;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.562);
-    padding: 10px 30px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.bodywrap .imgslide .img {
-}
-/* 컨텐츠 시작 */
-.bodywrap .contents {
-    background: orange;
-    margin: 10px;
-}
-.bodywrap .contents .tabmenu {
-    background: skyblue;
-    width: 40%;
-}
-.bodywrap .contents .tabmenu>li{
-
-}
-.bodywrap .contents .tabmenu>li>a{
     display: block;
-    float: left;
-    background: #fff;
-    padding: 10px;
-    text-decoration: none;
-    color: #000;
-}
-.bodywrap .contents .tabmenu li .notice ul {
-    height: 200px;
-}
-.bodywrap .contents .tabmenu li .notice ul li {
-    display: block;
-    width: 100%;
-}
-.bodywrap .contents .tabmenu li .notice ul li a {
-}
-.bodywrap .contents .tabmenu li .notice ul li:nth-child(2n){
-    background: #ddd;
-}
-.bodywrap .contents .tabmenu .active2{
-    position: relative;
-    top:-200px;
-    left: 84px;
-    background: #ddd;
 }
 .clearfix::after {
     content: '';
     display: block;
     clear: both;
+}
+
+/* header 영역 */
+
+header {
+    background: tomato;
+    float: left;
+}
+header .top {
+    float: left;
+    background: #eee;
+    width: 200px;
+    height: 650px;
+}
+header .top .logo {
+    width: 200px;
+    height: 40px;
+    margin: 30px 0;
+}
+header .top .logo img {
+    /* padding left , 이미지에 margin */
+    margin-left: 15px;
+}
+header .top .menu {
+    width: 90%;
+    /* text 스타일 속성은 자손들에게 상속됨 */
+    text-align: center;
+}
+header .top .menu li {
+    font-size: 16px;
+    font-weight: 700;
+}
+header .top .menu li a {
+    color: #fff;
+    background: #222328;
+    padding: 10px 0;
+}
+header .top .menu li a:hover {
+    background: #930930;
+    color: #ff0;
 }
